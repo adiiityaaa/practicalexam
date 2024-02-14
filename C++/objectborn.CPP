@@ -1,21 +1,21 @@
 #include <iostream.h>
 #include <conio.h>
 
-class jeeaspirant {
+class object {
   public:
-  void downfall() {
-  cout<<"JEE Aspirant is dreaming of 98 Percentile :)"<<endl;
+  void print() {
+  cout<<"Now X is Alive."<<endl;
   }
-  jeeaspirant() {
-  cout<<"JEE Aspirant is waiting for his result."<<endl;
+  object() {
+  cout<<"Object is Born."<<endl;
   }
-  ~jeeaspirant() {
-  cout<<"JEE Aspirant committed suicide after seeing result!"<<endl;
+  ~object() {
+  cout<<"Object Died."<<endl;
   }
 };
 
 void main() {
- jeeaspirant life;
- life.downfall();
+ object obj;
+ obj.print();
  getch();
 }
