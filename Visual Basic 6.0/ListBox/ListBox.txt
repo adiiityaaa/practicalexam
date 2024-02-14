@@ -1,0 +1,33 @@
+Private Sub aB_Click()
+If cL.ListIndex >= 0 Then
+hL.AddItem cL.List(cL.ListIndex)
+cL.RemoveItem cL.ListIndex
+ElseIf hL.ListIndex >= O Then
+cL.AddItem hL.List(hL.ListIndex)
+hL.RemoveItem hL.ListIndex
+Else: MsgBox ("Please Select an Item!")
+End If
+End Sub
+
+Private Sub Form_Load()
+cL.AddItem ("Processor")
+cL.AddItem ("Motherboard")
+cL.AddItem ("Power Supply")
+hL.AddItem ("Monitor")
+hL.AddItem ("Mouse")
+hL.AddItem ("Keyboard")
+End Sub
+
+Private Sub rB1_Click()
+If cL.ListIndex >= 0 Then
+cL.RemoveItem cL.ListIndex
+Else: MsgBox ("Please Select an Item from Software List!")
+End If
+End Sub
+
+Private Sub rB2_Click()
+If hL.ListIndex >= 0 Then
+hL.RemoveItem hL.ListIndex
+Else: MsgBox ("Please Select an Item from Hardware List!")
+End If
+End Sub

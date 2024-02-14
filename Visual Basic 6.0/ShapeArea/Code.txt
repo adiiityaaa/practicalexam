@@ -1,0 +1,28 @@
+Private Sub cB_Click()
+Dim a As Double
+If oBox.Text = "Circle" Then
+ a = rBox.Text * 3.14 * rBox.Text
+ fBox.Text = a
+ElseIf oBox.Text = "Rectangle" Then
+ a = wBox.Text * bBox.Text
+ fBox.Text = a
+End If
+End Sub
+Private Sub Form_Load()
+oBox.AddItem ("Circle")
+oBox.AddItem ("Rectangle")
+rT.Visible = False
+wT.Visible = False
+bT.Visible = False
+rBox.Visible = False
+wBox.Visible = False
+bBox.Visible = False
+End Sub
+Private Sub oBox_Click()
+If oBox.Text = "Circle" Then
+rT.Visible = True
+wT.Visible = False
+bT.Visible = False
+rBox.Visible = True
+wBox.Visible = False
+bBox.Visible = False
