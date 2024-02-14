@@ -4,6 +4,7 @@
 class ratio {
  public:
  int num, den;
+ double p;
  void assign(int x, int y);
  void invert();
  void convert();
@@ -16,7 +17,7 @@ void ratio:: assign(int x, int y) {
 }
 
 void ratio:: convert() {
- cout<<"The ratio is: "<<num<<"/"<<den<<endl;
+ p=(double(num)/double(den));
 }
 
 void ratio:: invert() {
@@ -27,8 +28,8 @@ void ratio:: invert() {
 }
 
 void ratio:: print() {
- cout<<"Inverting the Values...."<<endl;
- cout<<"Ratio after inverting: "<<num<<"/"<<den<<endl;
+ cout<<"The Values are: "<<num<<"/"<<den<<endl;
+ cout<<"The ratio is: "<<p<<endl;
 }
 
 void main() {
@@ -39,7 +40,10 @@ void main() {
  ratio r;
  r.assign(x, y);
  r.convert();
+ r.print();
+ cout<<"Inverting the numbers..."<<endl;
  r.invert();
+ r.convert();
  r.print();
  getch();
 }
