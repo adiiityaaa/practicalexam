@@ -7,7 +7,7 @@ void main() {
  clrscr();
  char s[1000], temp;
  int len, lenr;
- cout<<"Enter the Length: "<<endl;
+ cout<<"Enter the String: "<<endl;
  gets(s);
  len = strlen(s);
  lenr = len - 1;
@@ -17,6 +17,7 @@ void main() {
   s[lenr] = temp;
   lenr--;
  }
+ cout<<"The reversed string is: "<<endl;
  cout<<s<<endl;
  getch();
 }
